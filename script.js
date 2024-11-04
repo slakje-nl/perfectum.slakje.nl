@@ -64,7 +64,7 @@ function replaceSearchedValueWithUnderlined(text, searchedValue) {
     }
 
     let underlined = $("<span>", {class: "text-decoration-underline", text: searchedValue});
-    return text.replace(searchedValue, underlined.prop('outerHTML'));
+    return text.replaceAll(searchedValue, underlined.prop('outerHTML'));
 }
 
 function loadWords() {
