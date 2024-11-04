@@ -57,9 +57,11 @@ function loadWords() {
     let searchedValue = $("#wordInput").val().toLowerCase();
 
     $('#searchResult').empty();
+    $("#searchResultEmpty").addClass("d-none");
 
     let labelClass = "fw-lighter small pe-1";
-    findDictionaryRowsMatchingSearchedValue(window.dictionary, searchedValue).forEach(element => {
+    let matchingWords = findDictionaryRowsMatchingSearchedValue(window.dictionary, searchedValue);
+    matchingWords.forEach(element => {
         let elem = $("<li>", {class: "list-group-item"});
         elem.append($("<small>", {class: labelClass, html: "infinitief"}));
         elem.append($("<span>", {class: "fw-bold", html: replaceSearchedValueWithUnderlined(element["infinitive"], searchedValue)}));
@@ -78,6 +80,10 @@ function loadWords() {
 
         $("#searchResult").append(elem);
     });
+
+    if (matchingWords.length === 0) {
+        $("#searchResultEmpty").removeClass("d-none");
+    }
 }
 
 window.onload = onPageLoaded;
