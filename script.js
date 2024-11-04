@@ -6,32 +6,18 @@ function onPageLoaded() {
         return false;
     });
 
-    loadFile();
-
-    $("#searchResultSpinner").hide();
-}
-
-function loadFile() {
-    $.get( "./dictionary.csv?_=2024.11.4.1", function( data ) {
-        let dictionaryLines = data.split(/\n/);
-        let headers = dictionaryLines.shift().split(";");
-
-        window.dictionary = [];
-        dictionaryLines.forEach(dictionaryLine => {
-            if (dictionaryLine === "") {
-                return true;
-            }
-
-            let row = {};
-            dictionaryLine.split(";").forEach(function (value, i) {
-                let key = headers[i];
-                row[key] = value;
-            });
-
-            window.dictionary.push(row);
-        })
-
-        loadWords();
+    window.dictionary = [];
+    Papa.parse("https://perfectum.slakje.nl/dictionary.csv?_=2024.11.4.2", {
+        download: true,
+        worker: true,
+        header: true,
+        step: function(row) {
+            window.dictionary.push(row.data);
+        },
+        complete: function() {
+            loadWords();
+            $("#searchResultSpinner").hide();
+        }
     });
 }
 

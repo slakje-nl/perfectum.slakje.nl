@@ -1,6 +1,125 @@
-infinitive;imperfectum;perfectum;perfectum_verb;polish
-begrijpen;begreep, begrepen;begrepen;hebben;rozumieć
-bekijken;bekeek, bekeken;bekeken;hebben;patrzeć, oglądać
-beschrijven;beschreef, beschreven;beschreven;hebben;opisać
-bewijzen;bewees, bewezen;bewezen;hebben;udowadniać
-bijten;beet, beten;gebeten;hebben;gryźć
+infinitive,imperfectum,perfectum,perfectum_verb,polish
+bedragen,"bedroeg, bedroegen",bedragen,hebben,"liczyć się, sumować się"
+beginnen,"begon, begonnen",begonnen,zijn,zaczynać
+begrijpen,"begreep, begrepen",begrepen,hebben,rozumieć
+bekijken,"bekeek, bekeken",Bekeken,hebben,"patrzeć, oglądać"
+beklimmen,"beklom, beklommen",beklommen,hebben,wspinać się
+beschrijven,"beschreef, beschreven",beschreven,hebben,opisać
+besluiten,"besloot, besloten",besloten,hebben,decydować
+bespreken,"besprak, bespraken",besproken,hebben,dyskutować
+bevallen,"beviel, bevielen",bevallen,zijn,zaspokajać
+zich bevinden,"bevond, bevonden",bevonden,hebben,być zlokalizowanym
+bewegen,"bewoog, bewogen",bewogen,hebben,ruszać się
+bewijzen,"bewees, bewezen",bewezen,hebben,udowadniać
+bieden,"bood, boden",geboden,hebben,oferować
+bijten,"beet, beten",gebeten,hebben,gryźć
+blijven,"bleef, bleven",gebleven,zijn,zostać
+breken,"brak, braken",gebroken,hebben,łamać
+dragen,"droeg, droegen",gedragen,hebben,nosić
+drinken,"dronk, dronken",gedronken,hebben,pić
+eten,"at, aten",gegeten,hebben,jeść
+zich gedragen,"gedroeg, gedroegen",gedragen,hebben,zachowywać się
+gelden,"gold, golden",gegolden,hebben,zdobywać
+genieten,"genoot, genoten",genoten,hebben,czerpać przyjemność
+geven,"gaf, gaven",gegeven,hebben,dawać
+hangen,"hing, hingen",gehangen,hebben,wisieć
+helpen,"hielp, hielpen",geholpen,hebben,pomagać
+houden,"hield, hielden",gehouden,hebben,"lubić, kochać"
+kiezen,"koos, kozen",gekozen,hebben,wybierać
+kijken,"keek, keken",gekeken,hebben,patrzeć
+klinken,"klonk, klonken",geklonken,hebben,brzmieć
+krijgen,"kreeg, kregen",gekregen,hebben,dostać
+laten,"liet, lieten",gelaten,hebben,wyjść
+lezen,"las, lazen",gelezen,hebben,czytać
+liggen,"lag, laten",gelegen,hebben,leżeć
+lijden,"leed, leden",geleden,hebben,cierpieć
+lijken,"leek, leken",geleken,hebben,"pojawiać się, wyglądać"
+lopen,"liep, liepen",gelopen,hebben / zijn,chodzić
+nemen,"nam, namen",genomen,hebben,brać
+omschrijven,"omschreef, omschreven",omschreven,hebben,definiować
+onderhouden,"onderhield, onderhielden",onderhouden,hebben,utrzymywać
+ontbijten,"ontbeet, ontbeten",ontbeten,hebben,jeść śniadanie
+onthouden,"onthield, onthielden",onthouden,hebben,pamiętać
+ontvangen,"ontving, ontvingen",ontvangen,hebben,otrzymać
+overlijden,"overleed, overleden",overleden,zijn,umrzeć
+rijden,"reed, reden",gereden,hebben / zijn,jechać
+roepen,"riep, riepen",geroepen,hebben,"Nazywać, wołać"
+schenken,"schonk, schonken",geschonken,hebben,obdarzać
+scheren,"schoor, schoren",geschoren,hebben,golić
+schieten,"schoot, schoten",geschoten,hebben,strzelać
+schijnen,"scheen, schenen",geschenken,hebben,świecić
+schrijven,"schreef, schreven",geschreven,hebben,pisać
+schrikken,"schrok, schrokken",geschrokken,zijn,przestraszyć się
+slaan,"sloeg, sloegen",geslagen,hebben,"bić, uderzyć"
+slapen,"sliep, sliepen",geslapen,hebben,spać
+sluiten,"sloot, sloten",gesloten,hebben,zamykać
+smelten,"smolt, smolten",gesmolten,hebben,roztopić się
+snijden,"sneed, sneden",gesneden,hebben,ciąć
+spreken,"sprak, spraken",gesproken,hebben,mówić
+springen,"sprong, sprongen",gesprongen,hebben / zijn,skakać
+steken,"stak, staken",gestoken,hebben,"włożyć, wbić"
+stelen,"stal, stalen",gestolen,hebben,kraść
+sterven,"stierf, stierven",gestorven,zijn,umrzeć
+strijken,"streek, streken",gestreken,hebben,prasować
+trekken,"trok, trokken",getrokken,hebben,ciągnąć
+vallen,"viel, vielen",gevallen,zijn,spadać
+vangen,"ving, vingen",gevangen,hebben,łapać
+vechten,"vocht, vochten",gevochten,hebben,walczyć
+verbieden,"verbood, verboden",verboden,hebben,zakazywać
+verbinden,"verbond, verbonden",verbonden,hebben,łączyć
+vergelijken,"vergeleek, vergeleken",vergeleken,hebben,porównywać
+vergeten,vergat vergaten,vergeten,hebben / zijn,zapominać
+verkiezen,"verkoos, verkozen",verkozen,hebben,wybierać
+verlopen,"verliep, verliepen",verlopen,zijn,kończyć się
+verschijnen,"verscheen, verschenen",verschenen,zijn,pojawiać się
+vertrekken,"vertrok, vertrokken",vertrokken,zijn,opuszczać
+vervangen,"verving, vervingen",vervangen,hebben,zastąpić
+verwijzen,"verwees, verwezen",verwezen,hebben,odnosić się
+vinden,"vond, vonden",gevonden,hebben,"znajdować, myśleć"
+vliegen,"vloog, vlogen",gevlogen,hebben / zijn,latać
+wegen,"woog, wogen",gewogen,hebben,ważyć
+wijzen,"wees, wezen",gewezen,hebben,wskazywać
+winnen,"won, wonnen",gewonnen,hebben,wygrywać
+zenden,"zond, zonden",gezonden,hebben,wysyłać
+zingen,"zong, zongen",gezongen,hebben,śpiewać
+zitten,"zat, zaten",gezeten,hebben,siedzieć
+zwemmen,"zwom, zwommen",gezwommen,hebben,pływać
+bakken,"bakte, bakten",gebakken,hebben,"piec, smażyć"
+bedenken,"bedacht, bedachten",bedacht,hebben,"myśleć, wyobrażać sobie"
+bestaan,"bestond, bestonden",bestaan,hebben,istnieć
+bezoeken,"bezocht, bezochten",bezocht,hebben,odwiedzać
+braden,"braadde, braadden",gebraden,hebben,"smażyć, piec"
+brengen,"bracht, brachten",gebracht,hebben,"przynieść, przywieźć"
+denken,"dacht, dachten",gedacht,hebben,myśleć
+doen,"deed, deden",gedaan,hebben,robić
+gaan,"ging, gingen",gegaan,zijn,"iść, jechać"
+hebben,"had, hadden",gehad,hebben,mieć
+heten,"heette, heetten",geheten,hebben,nazywać się
+jagen,"joeg, joegen",gejaagd,hebben,polować
+komen,"kwam, kwamen",gekomen,zijn,"przychodzić, pochodzić, przyjeżdżać"
+kopen,"kocht, kochten",gekocht,hebben,kupować
+kunnen,"kon, konden",gekund,hebben,"móc (umieć, być w stanie)"
+lachen,"lachte, lachten",gelachen,hebben,śmiać się
+moeten,"moest, moesten",gemoeten,hebben,musieć
+mogen,"mocht, mochten",gemogen,hebben,Móc (miec pozwolenie)
+onderzoeken,"onderzocht, onderzochten",onderzocht,hebben,odkrywać
+ontspannen,"ontspande, ontspanden",ontspannen,hebben,relaksować się
+scheiden,"scheidde, scheidden",gescheiden,hebben,rozwodzić się
+spannen,"spande, spanden",gespannen,hebben,naciągać
+staan,"stond, stonden",gestaan,hebben,stać
+verdenken,"verdacht, verdachten",verdacht,hebben,podejrzewać
+verkopen,"verkocht, verkochten",verkocht,hebben,sprzedawać
+verstaan,"verstond, verstonden",verstaan,hebben,rozumieć
+verzoeken,"verzocht, verzochten",verzocht,hebben,prosić
+voldoen,"voldeed, voldeden",voldaan,hebben,płacić
+voorkomen,"voorkwam, voorkwamen",voorkomen,hebben,zapobiegać
+vragen,"vroeg, vroegen",gevraagd,hebben,pytać
+wassen,"waste, wasten",gewassen,hebben,prać
+weten,"wist, wisten",geweten,hebben,wiedzieć
+willen,"wilde / wou, wilden / wouden",gewild,hebben,chcieć
+worden,"werd, werden",geworden,zijn,"być, stać się"
+zeggen,"zei, zeiden",gezegd,hebben,mówić
+zien,"zag, zagen",gezien,hebben,widzieć
+zijn,"was, waren",geweest,zijn,być
+zoeken,"zocht, zochten",gezocht,hebben,szukać
+zullen,"zou, zouden",-,-,mieć powinność
