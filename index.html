@@ -12,6 +12,9 @@
     <script src="https://js.sentry-cdn.com/f3c99ae8fbbfb3b3c1931c9bc0ab1a77.min.js" crossorigin="anonymous"></script>
     <script src="./papaparse.min.js?_=2024.11.4.1"></script>
     <script src="./script.js?_=2024.11.4.6"></script>
+    <script>
+        Sentry.onLoad(function() { Sentry.init({}); });
+    </script>
 </head>
 <body>
     <div class="container">
