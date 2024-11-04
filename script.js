@@ -68,7 +68,9 @@ function loadWords() {
         elem.append($("<span>", {html: replaceSearchedValueWithUnderlined(element["imperfectum"], searchedValue)}));
         elem.append($("<br>"));
         elem.append($("<span>", {class: labelClass, html: "perfectum"}));
-        elem.append($("<span>", {class: "text-info fw-light", text: element["perfectum_verb"]}));
+        if (element["perfectum_verb"] !== "-") {
+            elem.append($("<span>", {class: "text-info fw-light", text: element["perfectum_verb"]}));
+        }
         elem.append($("<span>", {class: "ps-1", html: replaceSearchedValueWithUnderlined(element["perfectum"], searchedValue)}));
         elem.append($("<br>"));
         elem.append($("<span>", {class: labelClass, html: "po polsku"}));
