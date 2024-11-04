@@ -72,15 +72,20 @@ function loadWords() {
 
     $('#searchResult').empty();
 
+    let labelClass = "fw-lighter small pe-1";
     findDictionaryRowsMatchingSearchedValue(window.dictionary, searchedValue).forEach(element => {
         let elem = $("<li>", {class: "list-group-item"});
+        elem.append($("<small>", {class: labelClass, html: "infinitief"}));
         elem.append($("<span>", {class: "fw-bold", html: replaceSearchedValueWithUnderlined(element["infinitive"], searchedValue)}));
-        elem.append($("<span>", {class: "px-1 fw-light", text: "|"}));
+        elem.append($("<br>"));
+        elem.append($("<small>", {class: labelClass, html: "imperfectum"}));
         elem.append($("<span>", {html: replaceSearchedValueWithUnderlined(element["imperfectum"], searchedValue)}));
-        elem.append($("<span>", {class: "px-1 fw-light", text: "|"}));
+        elem.append($("<br>"));
+        elem.append($("<span>", {class: labelClass, html: "perfectum"}));
         elem.append($("<span>", {class: "text-info fw-light", text: element["perfectum_verb"]}));
         elem.append($("<span>", {class: "ps-1", html: replaceSearchedValueWithUnderlined(element["perfectum"], searchedValue)}));
-        elem.append($("<span>", {class: "px-1 fw-light", text: "|"}));
+        elem.append($("<br>"));
+        elem.append($("<span>", {class: labelClass, html: "po polsku"}));
         elem.append($("<span>", {html: replaceSearchedValueWithUnderlined(element["polish"], searchedValue)}));
 
         $("#searchResult").append(elem);
