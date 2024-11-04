@@ -7,7 +7,7 @@ function onPageLoaded() {
     });
 
     window.dictionary = [];
-    Papa.parse("https://perfectum.slakje.nl/dictionary.csv?_slakje_version=3c996fd", {
+    Papa.parse("https://perfectum.slakje.nl/dictionary.csv?_slakje_version=85fcae2", {
         download: true,
         worker: true,
         header: true,
