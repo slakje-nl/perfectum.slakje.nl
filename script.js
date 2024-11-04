@@ -37,7 +37,7 @@ function loadFile() {
 
 function dictionaryRowContainsSearchedValue(row, searchedValue) {
     for (const [key, value] of Object.entries(row)) {
-        if (key !== "perfectum_verb" && value.toLowerCase().includes(searchedValue.toLowerCase())) {
+        if (key !== "perfectum_verb" && value.includes(searchedValue)) {
             return true
         }
     }
@@ -68,7 +68,7 @@ function replaceSearchedValueWithUnderlined(text, searchedValue) {
 }
 
 function loadWords() {
-    let searchedValue = $("#wordInput").val();
+    let searchedValue = $("#wordInput").val().toLowerCase();
 
     $('#searchResult').empty();
 
