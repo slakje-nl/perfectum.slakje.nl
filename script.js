@@ -37,7 +37,7 @@ function loadFile() {
 
 function dictionaryRowContainsSearchedValue(row, searchedValue) {
     for (const [key, value] of Object.entries(row)) {
-        if (key !== "perfectum_verb" && value.includes(searchedValue)) {
+        if (key !== "perfectum_verb" && value.toLowerCase().includes(searchedValue.toLowerCase())) {
             return true
         }
     }
