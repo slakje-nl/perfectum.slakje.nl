@@ -1,0 +1,15 @@
+{
+  "name": "Perfectum Slakje",
+  "short_name": "Perfectum",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#333",
+  "theme_color": "#333",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/snail.png",
+      "type": "image/png", "sizes": "128x128"
+    }
+  ]
+}
