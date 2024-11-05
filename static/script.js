@@ -22,7 +22,7 @@ function onPageLoaded() {
 }
 
 function normalizeText(text) {
-    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 }
 
 function dictionaryRowContainsSearchedValue(row, searchedValue) {
@@ -35,7 +35,7 @@ function dictionaryRowContainsSearchedValue(row, searchedValue) {
 }
 
 function findDictionaryRowsMatchingSearchedValue(dictionary, searchedValue) {
-    if (searchedValue === "") {
+    if (normalizeText(searchedValue) === "") {
         return dictionary
     }
 
@@ -49,7 +49,7 @@ function findDictionaryRowsMatchingSearchedValue(dictionary, searchedValue) {
 }
 
 function replaceSearchedValueWithUnderlined(text, searchedValue) {
-    if (searchedValue === "") {
+    if (normalizeText(searchedValue) === "") {
         return text
     }
 
@@ -59,14 +59,14 @@ function replaceSearchedValueWithUnderlined(text, searchedValue) {
     let position = normalizedText.lastIndexOf(normalizedValue);
     while (position !== -1) {
         let leftPart = text.slice(0, position);
-        let cutPart = text.slice(position, position + searchedValue.length);
-        let rightPart = text.slice(position + searchedValue.length);
+        let cutPart = text.slice(position, position + normalizedValue.length);
+        let rightPart = text.slice(position + normalizedValue.length);
 
         let underlined = $("<span>", {class: "text-decoration-underline", text: cutPart});
         text = leftPart + underlined.prop('outerHTML') + rightPart;
 
-        let normalizedText = normalizeText(text);
-        let normalizedValue = normalizeText(searchedValue);
+        normalizedText = normalizeText(text);
+        normalizedValue = normalizeText(searchedValue);
         position = normalizedText.lastIndexOf(normalizedValue, position - 1);
     }
 
