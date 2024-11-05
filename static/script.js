@@ -21,9 +21,13 @@ function onPageLoaded() {
     });
 }
 
+function normalizeText(text) {
+    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
 function dictionaryRowContainsSearchedValue(row, searchedValue) {
     for (const [key, value] of Object.entries(row)) {
-        if (key !== "perfectum_verb" && value.includes(searchedValue)) {
+        if (key !== "perfectum_verb" && normalizeText(value).includes(normalizeText(searchedValue))) {
             return true
         }
     }
@@ -49,8 +53,24 @@ function replaceSearchedValueWithUnderlined(text, searchedValue) {
         return text
     }
 
-    let underlined = $("<span>", {class: "text-decoration-underline", text: searchedValue});
-    return text.replaceAll(searchedValue, underlined.prop('outerHTML'));
+    // find matching positions, replace with what was there originally but underscored
+    let normalizedText = normalizeText(text);
+    let normalizedValue = normalizeText(searchedValue);
+    let position = normalizedText.lastIndexOf(normalizedValue);
+    while (position !== -1) {
+        let leftPart = text.slice(0, position);
+        let cutPart = text.slice(position, position + searchedValue.length);
+        let rightPart = text.slice(position + searchedValue.length);
+
+        let underlined = $("<span>", {class: "text-decoration-underline", text: cutPart});
+        text = leftPart + underlined.prop('outerHTML') + rightPart;
+
+        let normalizedText = normalizeText(text);
+        let normalizedValue = normalizeText(searchedValue);
+        position = normalizedText.lastIndexOf(normalizedValue, position - 1);
+    }
+
+    return text;
 }
 
 function loadWords() {
