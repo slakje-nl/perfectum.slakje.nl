@@ -16,7 +16,7 @@ function onPageLoaded() {
         },
         complete: function() {
             loadWords();
-            $("#searchResultSpinner").hide();
+            $("#searchResultSpinner").addClass("d-none");
         }
     });
 }
