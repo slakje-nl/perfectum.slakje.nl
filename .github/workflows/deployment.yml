@@ -15,6 +15,21 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Check for uppercase letters in the dictionary
+        run: |
+          echo "Looking for uppercase letters in dictionary.txt..."
+          if grep '[A-Z]' "static/dictionary.txt"; then
+            echo "Error: Uppercase letters found"
+            exit 1
+          else
+            echo "Success: No uppercase letters found"
+          fi
+
   bump-static-files-version:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     runs-on: ubuntu-latest
