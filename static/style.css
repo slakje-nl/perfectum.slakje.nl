@@ -1,3 +1,10 @@
 body { background-color: #333 !important }
 #stroopwafel { filter: invert(0.9); width: 10% }
-#footer, #footer a { color: #ccc}
+#regular, #footer, #footer a { color: #ccc }
+
+@media only screen and (max-width : 1300px) {
+    span.break-on-mobile:after {
+        content:"\a";
+        white-space: pre;
+    }
+}
