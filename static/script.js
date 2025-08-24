@@ -104,6 +104,8 @@ function loadWords() {
     if (matchingWords.length === 0) {
         $("#searchResultEmpty").removeClass("d-none");
     }
+
+    sa_event("search_verb", { query: searchedValue });
 }
 
 window.onload = onPageLoaded;
